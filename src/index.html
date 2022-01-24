@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Quiz App</title>
+  <link rel="shortcut icon" href="web.svg">
+	<link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+<!-- pantalla principal que da bienvenida -->
+  <div id="pantalla-inicio">
+    <h1>Quizz App</h1>
+    <div>Bienvenido</div>
+    
+      <label for="name">Ingresa tu nombre:</label>
+      <input type="text" id="name" placeholder="Ingresa..."/>
+    <div class="estilo-buttoncaj">
+      <p><input type="radio"  name="tema"  value="tema1" id="tema1"/>Quizz películas Asiáticas</p> 
+      <p><input type="radio"  name="tema"  value="tema2" id="tema2"/>Quizz películas Americanas </p> 
+      <input type="submit" class= "estilo-button" value="Jugar" />
+   </div>
+    
+    
+  </div>
+<!-- Ingreso a la ventana de preguntas para responder de tema1 -->
+ <div id="pantalla-preguntas">
+    <h2>Quiz de preguntas </h2> 
+    <h3 id="holaNombre"></h3>
+	<div name="quiz" id="quiz">
+    <div>
+			      <p>1.¿Cuál era el significado de las flores de  trigo sarraceno en el drama "Goblin"?</p>
+
+			      <p><input type="radio"  name="question1"   value="Marriage" id="Marriage"/>A.Marriage</p>
+
+            <p><input type="radio"  name="question1"  value="Lovers" id="Lovers"/>B.Lovers</p>      <!-- correcto -->
+            
+            <p><input type="radio"   name="question1"  value="Destiny" id="Destiny"/>C.Destiny</p>
+
+            <p><input type="radio" name="question1"  value="Hope" id="Hope"/>D.Hope</p>
+
+      </div>
+      
+      <div>
+            <p>2.¿Cuál de estos K-dramas fue protagonizado por Hyun Bin y Kim Sun Ah?</p>
+
+            <p><input type="radio"  name="question2" value="Words Within" id="words_within"/>A.Words Within</p>
+
+            <p><input type="radio"  name="question2" value="I Do, I Do" id="idoido"/>B.I Do, I Do</p>
+
+            <p><input type="radio"  name="question2" value="My name is Kim Sam Soon" id="my_name_isKim"/>C.My name is Kim Sam Soon</p><!-- correcto -->
+
+            <p><input type="radio"  name="question2" value="The City Hal" id="the_city_hall" />D.The City Hall</p>
+            
+        </div>  
+   
+     <div>
+            <p>3.¿En qué exitosos K-drama So Ji Sub interpretó a Cha Moo Hyuk?</p>
+
+            <p><input type="radio"  name="question3" value="I`m Sorry, I love you" id="im_sorry" />A.I`m Sorry, I love you </p>
+            <!-- correcto -->
+            <p><input type="radio"  name="question3" value="Oh mi Venus" id="oh_mi_venus"/>B.Oh mi Venus</p>
+
+            <p><input type="radio"  name="question3" value="Master`s Soon" id="master_soon" />C.Master`s Soon</p>
+
+            <p><input type="radio"  name="question3" value="What Happened In Bali" id="what_happened" />D.What Happened In Bali</p>
+        </div> 
+
+     </div> 
+       <div class="estilo-buttoncaj" >
+        <input type="button" class="estilo-button" value="Responder y Ver   Resultados"  id = "Responder y respuestas" >
+       </div>
+  </div>
+   <!---Ingreso a la ventana de preguntas para responder de tema2  -->
+<div id="pantalla-preguntas2">
+    <h2>Quiz de preguntas </h2> 
+    <h3 id="holaNombre"></h3>
+	<div name="quiz" id="quiz2">
+    <div>
+			      <p>1.Que tipo de pelicula es rapidos y furiosos</p>
+
+			      <p><input type="radio"  name="question1"   value="película de dibujos" id="película de dibujos"/>A.
+            película de dibujos animados </p>
+
+            <p><input type="radio"  name="question1"  value="película romántica" id="película romántica"/>B.película romántica</p>   
+            
+            <p><input type="radio"   name="question1"  value="película de entrevistas" id="película de entrevistas"/>C.película de entrevistas</p>
+
+            <p><input type="radio" name="question1"  value="película de acción" id="película de acción"/>D.película de acción</p> <!--correcta-->  
+
+      </div>
+      
+      <div>
+            <p>2.Quien es el director de la pelicula el Laberinto del Fauno</p>
+
+            <p><input type="radio"  name="question2" value="Benicio del Toro" id="benicio-del-toro"/>A.Benicio del Toro</p>
+
+            <p><input type="radio"  name="question2" value="Guillermo Navarro" id="guillermo -navarro"/>B.Guillermo Navarro</p>
+
+            <p><input type="radio"  name="question2" value="Guillermo del Toro" id="guillermo- del-Toro"/>C.Guillermo del Toro</p>
+
+            <p><input type="radio"  name="question2" value="Doug Jone" id="doug-jonel" />D.Doug Jone</p>
+            
+        </div>  
+   
+     <div>
+            <p>3.Cual es el nombre del actor que interpreta a Spock en STAR TREK</p>
+
+            <p><input type="radio"  name="question3" value="Chris Pine" id="chris-pine" />A.Chris Pine   </p>
+           
+            <p><input type="radio"  name="question3" value="Patrick Stewart" id="patrick-stewart"/>B.Patrick Stewart</p>
+
+            <p><input type="radio"  name="question3" value="Leonard Nimoy" id="leonard-nimoy" />C.Leonard Nimoy </p> 
+
+            <p><input type="radio"  name="question3" value="William shatner" id="william-shatner" />D.William shatner </p>
+        </div> 
+
+     </div> 
+       <div class="estilo-buttoncaj" >
+        <input type="button" class="estilo-button" value="Responder y Ver   Resultados"  id = "Responder y respuestas" >
+       </div>
+  </div>
+
+ <!-- ventana de respuestas correcta e incorrectas en conjunto con el puntaje   -->
+<div id="pantalla-respuestas">
+ <h2>Respuestas</h2>
+ <div>
+   <h3>Pregunta 1</h3>
+   <p id="preg1"></p>
+ </div>
+ <div>
+   <h3>Pregunta 2</h3>
+   <p id="preg2"></p>
+   </div>
+
+ <div>
+   <h3>Pregunta 3</h3>
+   <p id="preg3"> </p>
+ </div>
+ <div>
+  <h3 id="totalPuntos"></h3>
+ </div>
+
+ <div class="estilo-buttoncaj" > 
+    <button onclick="volverJugar()" class="estilo-button" id="volverJugar">Volver a Jugar</button>
+  </div>
+
+ 
+</div >  
+   <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

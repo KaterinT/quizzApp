@@ -1,0 +1,63 @@
+/* #pantalla-preguntas {
+  display:none;
+} */
+body{
+  background-image: url(../background.png);
+  opacity: 0.85;
+  font-family: 'Varela Round', sans-serif;
+}
+#pantalla-inicio,#pantalla-preguntas,#pantalla-preguntas2,#pantalla-respuestas{
+  padding: 3em ;
+  justify-content: center;
+}
+#pantalla-inicio{
+  display: block;
+  text-align: center;
+}
+#pantalla-preguntas,#pantalla-preguntas2{
+  display: none;
+  text-align: center;
+}
+#pantalla-respuestas{
+  display: none;
+  text-align: center;
+}
+
+.estilo-button{
+ cursor: pointer;
+font-size: 1.5em;
+border: none;  
+border-radius: 0.5em;
+padding: 0.5em;
+background: rgba(103, 110, 180, 0.452); 
+color: rgb(130, 247, 175);
+
+}
+
+.estilo-buttoncaj{
+padding: 1em;
+}
+
+label{
+display: block;
+padding: 1em;
+}
+
+#name{
+border: none;
+border-radius: 0.5em;
+padding: 0.5em;
+}
+
+#preg1,#preg2,#preg3{
+font-size:1.5em;
+}
+
+.estilo-button:hover {
+background: rgba(12, 20, 102, 0.452); 
+padding: 0.6em;
+}
+
+input[type="radio"]:hover{
+cursor: pointer;
+}
