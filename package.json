@@ -5,13 +5,13 @@
   "main": "script.js",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
-    "deploy":"gh-pages -d src"
+    "deploy": "gh-pages -d src"
   },
   "keywords": [
     "trivia",
     "questions"
   ],
-  "homepage":"https://KaterinT.github.io/katerinT",
+  "homepage": "https://github.com/KaterinT/quizzApp",
   "author": "Katerin Tello",
   "license": "ISC",
   "devDependencies": {
